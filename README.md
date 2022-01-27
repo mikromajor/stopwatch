@@ -1,10 +1,14 @@
 # Stopwatch - pet project
 (React, hooks: useRef, useState, useEffect, useCallback; memo)
 
-The stopwatch displays on the scoreboard - [hh:mm:ss:ms] 
-and control panel - 4 buttons Wait, Reset, Start/Stop, Check speed.
+The stopwatch displays on the scoreboard - [hh:mm:ss:dMs]       //(1 dMs = 10 ms)
+and control panel with buttons: Wait, Reset, Start/Stop, Check speed, Double click. 
+"STOP"-reset all to zero.
+"WAIT" - pause stopwatch.
+"RESET" - reset current values (and pause) and restart stopwatch.
+"Check speed" -(works, when stopwatch is reset via "STOP") start after the first click and finish after the second click..
+"Double click" - works isolated. Activate indicator if double clicks is a smaller than 300ms
 
-Using the button "Check speed" can check the time double click.
 In the console can see which buttons and how many times have been re-rendered.
 
 # Getting Started with Create React App
